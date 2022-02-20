@@ -60,5 +60,22 @@
       "id": "5jTuS49"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "vannhat@gmail.com",
+      "password": "$2a$10$4TsfeQ740dDeznmtrD6INe8gD9Fs73oaRaL9uwsPbIwMiGUpTjlNy",
+      "id": 1
+    },
+    {
+      "email": "bonhat02@gmail.com",
+      "password": "$2a$10$1CsTxecxJmaWnLdg07VXPuoLvu1Qhkgk0YG8SKFSaenmfgz/G4sv2",
+      "id": 2
+    },
+    {
+      "email": "nnn@gmail.com",
+      "password": "$2a$10$dUnwnwLENd9G1mX.g7vrNu3vXFHdgsnJbIDvATc.Y7NZ3R5wd0O3W",
+      "name": "asdasdsad",
+      "id": 3
+    }
+  ]
 }

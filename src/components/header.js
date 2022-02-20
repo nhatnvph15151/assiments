@@ -13,8 +13,8 @@ const header = {
           <ul class="flex text-lg ">
             
            
-            <li class="pr-3 pl-3 mr-2 border rounded-md text-[14px] hover:bg-orange-400 hover:text-white "><a href="#">Đăng Ký</a></li>
-            <li class="pr-3 pl-3 border rounded-md text-[14px] hover:bg-orange-400 hover:text-white " ><a href="#">Đăng Nhập</a></li>
+            <li class="pr-3 pl-3 mr-2 border rounded-md text-[14px] hover:bg-orange-400 hover:text-white "><a href="/signup">Đăng Ký</a></li>
+            <li class="pr-3 pl-3 border rounded-md text-[14px] hover:bg-orange-400 hover:text-white " ><a href="/signin">Đăng Nhập</a></li>
             <li class="pr-3 pl-3"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
             <li class="pr-3 pl-3"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
           </ul>
