@@ -1,5 +1,6 @@
 import { getAll } from "../../../api/product";
 import headerAdmin from "../../components/headerAdmin";
+
 const listAdmin = {
   async  render() {
       const {data} = await getAll();
@@ -36,6 +37,7 @@ const listAdmin = {
           ${data.map((products,index)=> /*html */`
            <tbody class="bg-white divide-y divide-gray-200">
             <tr>
+           
               <td class="px-6 py-4 whitespace-nowrap">
                 <div class="flex items-center">
                   <div class="flex-shrink-0 h-10 w-10">
@@ -43,7 +45,6 @@ const listAdmin = {
                   </div>
                   <div class="ml-4">
                     <div class="text-sm font-medium text-gray-900">${products.title}</div>
-                   
                   </div>
                 </div>
               </td>
@@ -55,7 +56,7 @@ const listAdmin = {
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Admin</td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="/admin/edit" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                <a href="/admin/${products.id}/edit" class="text-indigo-600 hover:text-indigo-900">Edit</a>
               </td>
             </tr>
             <!-- More people... -->

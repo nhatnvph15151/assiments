@@ -5,10 +5,10 @@ import newLists from "../components/newlists";
 
 const lists = {
  async render() {
-    return /* html*/ `  
+     return /* html*/ `  
         ${header.render()}
        <div class="banner max-w-7xl m-auto">
-        <img class="block text-center"  width="100%" height="550" src="https://file.hstatic.net/200000397757/file/slideshow_1_a81e9991039d431197bd4aec957627e1_master.jpg" alt="">
+        <img class="block text-center"  width="100%" height="550n" src="https://file.hstatic.net/200000397757/file/slideshow_1_a81e9991039d431197bd4aec957627e1_master.jpg" alt="">
         <div class="text absolute top-[50%] right-[150px] text-lg">
           <p class="text-right">
             <h2 class="text-5xl font-bold text-right flex flex-col	">LOFTFY - SALE</h2>

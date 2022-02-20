@@ -110,6 +110,7 @@ const addNew = {
                 data: formData,
             })
             add({
+              
                 title: document.querySelector("#title-product").value,
                 desc: document.querySelector("#desc-product").value,
                 saleof: document.querySelector("#saleof-product").value,
