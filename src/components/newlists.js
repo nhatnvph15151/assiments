@@ -10,7 +10,7 @@ const newLists = {
             <h1 class="text-center mb-5 text-2xl">SẢN PHẨM</h1>
             <div class="product flex justify-between grid grid-cols-5 gap-6 ">
             ${data.map((product)=> /*html*/ `
-            <a href="/lists/${product.id}">
+            <a href="#/lists/${product.id}">
               <div class="product-item overflow-hidden">
                 <img  class="hover:border-black hover:border w-[260px] h-[200px] object-cover" 
                 src="${product.img}" alt="">
