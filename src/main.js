@@ -6,15 +6,33 @@ import doashboard from "./page/admin/doashboard";
 import listsAdmin from "./page/admin/listsAdmin";
 import addNew from "./page/admin/add";
 import editAdmin from "./page/admin/edit";
-import signin from "./page/admin/signin";
-import Signup from "./page/admin/signup";
+import signin from "./page/signin";
+import Signup from "./page/signup";
+import CartPage from "./page/cart";
 
 
-const router = new Navigo("/", { linksSelector: "a" });
+const router = new Navigo("/", { linksSelector: "a", hash: true});
 const print = async (content, id) => {
     document.getElementById("app").innerHTML = await content.render(id);
     if(content.afterRender) content.afterRender(id);
 };
+
+router.on("/admin/*", () => { }, {
+    before(done, match) {
+        if (JSON.parse(localStorage.getItem('user'))) {
+            const id = JSON.parse(localStorage.getItem('user')).id;
+            if (id == 1) {
+                done();
+            } else {
+                document.location.href = "/"
+            }
+        } else {
+            document.location.href = "/"
+        }
+
+
+    }
+})
 
 router.on({
     // home page
@@ -27,6 +45,7 @@ router.on({
     "/signin": () => print(signin),
     "/signup": () => print(Signup),
     "/admin/:id/edit": ({ data }) => print(editAdmin, data.id),
-    "/admin/listsAdmin": () => print (listsAdmin)
+    "/admin/listsAdmin": () => print(listsAdmin),
+    "/cart": () => print(CartPage)
 });
 router.resolve();

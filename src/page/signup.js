@@ -1,5 +1,5 @@
-import header from "../../components/header";
-import { signup } from "../../../api/user";
+import header from "../components/header";
+import { signup } from "../../api/user";
 import toastr from "toastr";
 import "toastr/build/toastr.min.css"
 
@@ -19,11 +19,11 @@ import "toastr/build/toastr.min.css"
       <div class="rounded-md shadow-sm -space-y-px">
       <div>
           <label for="email-address" class="sr-only">Name</label>
-          <input id="name" name="email" type="text"  class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+          <input id="name" name="email" type="text"  class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Name">
         </div>
         <div>
           <label for="email-address" class="sr-only">Email address</label>
-          <input id="email" name="email" type="email"  class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+          <input id="email" name="email" type="email"  class="appearance-none rounded-none relative block w-full my-2 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
         </div>
         <div>
           <label for="password" class="sr-only">Password</label>
